@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f078;
+}
+
+h1 {
+    font-size: 80px;
+    margin: auto;
+    margin-top: 10px;
+    width: 50vw;
+    border-radius: 40px;
+    border: 5px solid rgb(112, 31, 22);
+}
+
+select {
+    width: 76%;
+    cursor: pointer;
+}
+
+input {
+    width: 50vw;
+    height: 5vh;
+    border: 2px solid lightcoral;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 3px
+}
+
+.dropdown {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.amount {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    width: 50vw;
+    height: 5vh;
+    border: 2px solid rgb(9, 9, 9);
+    background-color: rgb(234, 181, 111);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(97, 38, 38);
+
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+img {
+    width: 12vw;
+}
+
+.msg {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(13, 101, 226);
+    font-weight: bold;
+}
+
+.from,
+.to {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+
+    h1 {
+        width: 80vw;
+        font-size: 55px;
+    }
+
+    input,
+    button {
+        width: 70vw;
+    }
+
+    .dropdown {
+        gap: 50px;
+        margin: 70px 20px;
+    }
+
+    img {
+        width: 15vw;
+    }
+
+    .msg {
+        font-size: 25px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    h1 {
+        width: 90vw;
+        font-size: 35px;
+        border-width: 3px;
+    }
+
+    .amount {
+        font-size: 20px;
+    }
+
+    input {
+        width: 85vw;
+        font-size: 22px;
+        height: 45px;
+    }
+
+    .dropdown {
+        flex-direction: column;
+        gap: 30px;
+        margin: 40px 0;
+    }
+
+    .select {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    select {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    .msg {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    button {
+        width: 85vw;
+        height: 50px;
+        font-size: 18px;
+    }
+}
